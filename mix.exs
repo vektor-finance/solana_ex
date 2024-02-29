@@ -13,7 +13,10 @@ defmodule SolanaEx.MixProject do
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       package: package(),
-      test_coverage: [tool: ExCoveralls]
+      test_coverage: [tool: ExCoveralls],
+      dialyzer: [
+        plt_file: {:no_warn, "priv/plts/dialyzer.plt"}
+      ]
     ]
   end
 
@@ -36,6 +39,7 @@ defmodule SolanaEx.MixProject do
       {:tesla, "~> 1.2"},
       # test/dev dependencies
       {:credo, "~> 1.7", only: [:dev, :test], runtime: false},
+      {:dialyxir, "~> 1.4", only: :dev, runtime: false},
       {:excoveralls, "~> 0.18", only: [:test], runtime: false}
     ]
   end

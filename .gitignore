@@ -28,3 +28,7 @@ solana_ex-*.tar
 # IDE
 .elixir_ls/
 .elixir-tools/
+
+# Dialyzer files
+/priv/plts/*.plt
+/priv/plts/*.plt.hash
