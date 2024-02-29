@@ -44,7 +44,7 @@ defmodule SolanaEx.MixProject do
     do: [
       name: "solana_ex",
       maintainers: ["Vektor <engineering@vektor.finance>"],
-      files: ["lib", "solana_ex", "mix.exs", "checksum-*.exs", "README.md"],
+      files: ["lib", "solana_ex", "mix.exs", "README.md"],
       links: %{"GitHub" => @source_url}
     ]
 end
