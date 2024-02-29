@@ -10,8 +10,6 @@ jobs:
   static_analysis:
     name: Static Analysis
     runs-on: ubuntu-latest
-    env:
-      MIX_ENV: test
     strategy:
       matrix:
         elixir: ["1.15.7"]
