@@ -36,6 +36,7 @@ defmodule SolanaEx.MixProject do
       {:tesla, "~> 1.2"},
       # test/dev dependencies
       {:credo, "~> 1.7", only: [:dev, :test], runtime: false},
+      {:dialyxir, "~> 1.4", only: :dev, runtime: false},
       {:excoveralls, "~> 0.18", only: [:test], runtime: false}
     ]
   end
