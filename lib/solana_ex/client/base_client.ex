@@ -44,9 +44,9 @@ defmodule SolanaEx.Client.BaseClient do
       end
 
       @impl true
-      def get_program_account(program, config \\ %{}, opts \\ []) do
+      def get_program_accounts(program, config \\ %{}, opts \\ []) do
         params = build_params([program, config])
-        request("getProgramAccount", params, opts)
+        request("getProgramAccounts", params, opts)
       end
 
       @impl true

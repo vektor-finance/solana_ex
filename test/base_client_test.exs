@@ -50,7 +50,7 @@ defmodule SolanaEx.BaseClientTest do
   test "get_block/1", do: Helpers.check("get_block", [@slot])
   test "get_latest_blockhash/0", do: Helpers.check("get_latest_blockhash")
   test "get_multiple_accounts/1", do: Helpers.check("get_multiple_accounts", [[@pubkey]])
-  test "get_program_account/1", do: Helpers.check("get_program_account", [@pubkey])
+  test "get_program_accounts/1", do: Helpers.check("get_program_accounts", [@pubkey])
   test "get_recent_blockhash/0", do: Helpers.check("get_recent_blockhash")
   test "get_slot/0", do: Helpers.check("get_slot")
 end
