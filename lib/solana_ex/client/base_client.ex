@@ -38,6 +38,18 @@ defmodule SolanaEx.Client.BaseClient do
       end
 
       @impl true
+      def get_multiple_accounts(programs, config \\ %{}, opts \\ []) do
+        params = build_params([programs, config])
+        request("getMultipleAccounts", params, opts)
+      end
+
+      @impl true
+      def get_program_account(program, config \\ %{}, opts \\ []) do
+        params = build_params([program, config])
+        request("getProgramAccount", params, opts)
+      end
+
+      @impl true
       def get_recent_blockhash(config \\ %{}, opts \\ []) do
         params = build_params([config])
         request("getRecentBlockhash", params, opts)
