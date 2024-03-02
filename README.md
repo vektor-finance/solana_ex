@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> The code in this repository is under development and is not production ready.
+
 # solana_ex
 
-This project is in development and not production ready.
+Elixir client for the [Solana](https://solana.com/) blockchain.
